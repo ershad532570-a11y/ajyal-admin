@@ -1,0 +1,9 @@
+# إعداد Netlify — موقع ثابت بلا بناء + بوابة Edge للمصادقة
+[build]
+  publish = "."
+  command = ""
+
+# بوابة المصادقة تُطبَّق على كل المسارات
+[[edge_functions]]
+  path = "/*"
+  function = "auth"
